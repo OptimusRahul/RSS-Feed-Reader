@@ -1,0 +1,9 @@
+INSERT INTO url(links) VALUES ('https://energy.economictimes.indiatimes.com/rss/topstories');
+INSERT INTO url(links) VALUES ('https://energy.economictimes.indiatimes.com/rss/power');
+INSERT INTO url(links) VALUES ('https://energy.economictimes.indiatimes.com/rss/Renewable');
+INSERT INTO url(links) VALUES ('https://energy.economictimes.indiatimes.com/rss/coal');
+INSERT INTO url(links) VALUES ('https://energy.economictimes.indiatimes.com/rss/industry');
+INSERT INTO url(links) VALUES ('https://www.realwire.com/rss/?id=224&row=&view=Synopsis');
+INSERT INTO url(links) VALUES ('https://www.realwire.com/rss/?id=638&row=&view=Synopsis');
+INSERT INTO url(links) VALUES ('https://feeds.feedburner.com/RenewableEnergyNewsRssFeed');
+INSERT INTO url(links) VALUES ('https://feeds.feedburner.com/EnergyEfficiencyRssFeed');

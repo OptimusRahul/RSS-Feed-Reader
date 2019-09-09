@@ -1,0 +1,19 @@
+<div class="bckgrnd">
+  <form class="form-inline boxpos active-purple-3 active-purple-4">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input class="form-control form-control-sm ml-3 w-75" [(ngModel)]="filterText" [ngModelOptions]="{standalone: true}" type="text" placeholder="Search" aria-label="Search" #searchFilterBox>
+  </form>
+  <hr>
+  <i class="" aria-hidden="true" src="../../assets/images/news_icon.ico"></i>
+  <h2>{{ title }}</h2>
+  <hr>
+  <div class="wrapper">
+      <div *ngFor = "let feed of feeds | searchFilter: filterText" class="card item">
+      <p id="titleSize"><strong> {{feed.feedtitle}} </strong></p>
+      <p id="contentSize"> {{feed.feedcontent}} <a href={{feed.feedurls}} target="_blank"> Read More</a> </p>
+      <p> {{feed.feedprovider}} {{feed.feedcategory}} {{feed.feeddatetime | date : "hh:mm:ss" }} {{feed.feeddatetime | date : "dd-MMM-y" }} </p>
+     </div>
+    </div>
+  </div>
+
+<app-footer></app-footer>

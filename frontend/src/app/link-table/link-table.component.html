@@ -1,0 +1,33 @@
+<hr>
+<h3 class="black-text font-weight txt-center top-pos">Rss Links</h3>
+<div class="px-4 card w-75 p-3 card-pos">
+  <table class="table table-hover table-responsive-md mb-0">
+    <thead>
+     <tr>
+       <th class="th-lg">ID</th>
+       <th class="th-lg">Links</th>
+     </tr>
+    </thead>
+    <tbody *ngFor = "let link of links_data_get | paginate: { itemsPerPage: 5, currentPage: p }">
+      <tr>
+        <td>{{ link.Id }}</td>
+        <td><a href={{link.links}} target=_blank>{{ link.links }}</a></td>
+        <td><button type="button" (click)="delLink(link.Id);" class="btn btn-default ">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+        </button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<br>
+<hr class="my-0">
+<div class="d-flex justify-content-center pag-pos">
+  <nav class="my-4 pt-2">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </nav>
+</div>
+
+<div>
+  <app-footer></app-footer>
+</div>

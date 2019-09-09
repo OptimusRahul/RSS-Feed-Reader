@@ -1,0 +1,15 @@
+<link rel="icon" type="image/x-icon" href="../../assets/images/news_icon.ico">
+<br>
+<br>
+<br>
+<div class="card block">
+    <marquee class="GeneratedMarquee" direction="up" scrollamount="10" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+        <div id="textfont" *ngFor = "let feed of feeds">
+          <p id="titleSize"><strong> {{feed.feedtitle}} </strong></p>
+          <p id="contentSize"> {{feed.feedcontent}} <a href={{feed.feedurls}} target="_blank"> Read More</a> </p>
+          <p id="contentSize"> {{feed.feedprovider}} {{feed.feedcategory}} {{feed.feeddatetime | date : "hh.mm.ss a  dd.MMM.y" }} </p>
+          <hr class="lineColor">
+        </div>
+    </marquee>
+</div>
+

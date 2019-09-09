@@ -1,0 +1,29 @@
+.block{
+  border-radius: 25px 0px 0px 25px;
+  background: white;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: right;
+  overflow:auto;
+  width: 400px;
+  height:600px;
+}
+
+#titleSize{
+  font-size: 18px;
+}
+
+#contentSize{
+  font-size: 11px;
+}
+
+.GeneratedMarquee {
+
+  padding:0.5em;
+  overflow: auto;
+}
+
+.lineColor{
+  color: black;
+}
